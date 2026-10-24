@@ -1,0 +1,59 @@
+{
+ "mean": {
+  "AdaBN (test time)|CNN + DenseNet121 + VGG16": {
+   "acc": 0.471,
+   "macro_f1": 0.4662
+  },
+  "AdaBN (test time)|DenseNet121": {
+   "acc": 0.5214,
+   "macro_f1": 0.5352
+  },
+  "Background removal (test time)|CNN + DenseNet121 + VGG16": {
+   "acc": 0.4782,
+   "macro_f1": 0.4172
+  },
+  "Background removal (test time)|DenseNet121": {
+   "acc": 0.4622,
+   "macro_f1": 0.3855
+  },
+  "Baseline|CNN + DenseNet121 + VGG16": {
+   "acc": 0.5275,
+   "macro_f1": 0.4984
+  },
+  "Baseline|DenseNet121": {
+   "acc": 0.5317,
+   "macro_f1": 0.502
+  }
+ },
+ "std": {
+  "AdaBN (test time)|CNN + DenseNet121 + VGG16": {
+   "acc": 0.0107,
+   "macro_f1": 0.0079
+  },
+  "AdaBN (test time)|DenseNet121": {
+   "acc": 0.022,
+   "macro_f1": 0.0246
+  },
+  "Background removal (test time)|CNN + DenseNet121 + VGG16": {
+   "acc": 0.0072,
+   "macro_f1": 0.0086
+  },
+  "Background removal (test time)|DenseNet121": {
+   "acc": 0.0063,
+   "macro_f1": 0.019
+  },
+  "Baseline|CNN + DenseNet121 + VGG16": {
+   "acc": 0.0051,
+   "macro_f1": 0.0054
+  },
+  "Baseline|DenseNet121": {
+   "acc": 0.0064,
+   "macro_f1": 0.008
+  }
+ },
+ "seeds": [
+  42,
+  7,
+  123
+ ]
+}

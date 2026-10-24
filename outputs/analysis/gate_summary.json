@@ -1,0 +1,104 @@
+{
+ "mean": {
+  "teaLeafBD|DenseNet121, confidence rule": {
+   "advised": 0.9479,
+   "correct_when_advised": 0.9541,
+   "wrong_advice": 0.0436,
+   "referred": 0.0521
+  },
+  "teaLeafBD|Triple, agreement gate (proposed)": {
+   "advised": 0.7459,
+   "correct_when_advised": 0.9907,
+   "wrong_advice": 0.0069,
+   "referred": 0.2541
+  },
+  "teaLeafBD|Triple, confidence rule": {
+   "advised": 0.7535,
+   "correct_when_advised": 0.9908,
+   "wrong_advice": 0.0069,
+   "referred": 0.2465
+  },
+  "teaLeafBD|_disagreement": {
+   "err_when_disagree": 0.2004,
+   "err_when_agree": 0.0156,
+   "disagree_rate": 0.2121
+  },
+  "unseen|DenseNet121, confidence rule": {
+   "advised": 0.8595,
+   "correct_when_advised": 0.5587,
+   "wrong_advice": 0.3793,
+   "referred": 0.1405
+  },
+  "unseen|Triple, agreement gate (proposed)": {
+   "advised": 0.4273,
+   "correct_when_advised": 0.5423,
+   "wrong_advice": 0.1952,
+   "referred": 0.5727
+  },
+  "unseen|Triple, confidence rule": {
+   "advised": 0.4349,
+   "correct_when_advised": 0.5439,
+   "wrong_advice": 0.1981,
+   "referred": 0.5651
+  },
+  "unseen|_disagreement": {
+   "err_when_disagree": 0.4832,
+   "err_when_agree": 0.4615,
+   "disagree_rate": 0.5267
+  }
+ },
+ "std": {
+  "teaLeafBD|DenseNet121, confidence rule": {
+   "advised": 0.0028,
+   "correct_when_advised": 0.0042,
+   "wrong_advice": 0.0041,
+   "referred": 0.0028
+  },
+  "teaLeafBD|Triple, agreement gate (proposed)": {
+   "advised": 0.0167,
+   "correct_when_advised": 0.0018,
+   "wrong_advice": 0.0014,
+   "referred": 0.0167
+  },
+  "teaLeafBD|Triple, confidence rule": {
+   "advised": 0.0176,
+   "correct_when_advised": 0.0017,
+   "wrong_advice": 0.0014,
+   "referred": 0.0176
+  },
+  "teaLeafBD|_disagreement": {
+   "err_when_disagree": 0.0198,
+   "err_when_agree": 0.0026,
+   "disagree_rate": 0.0083
+  },
+  "unseen|DenseNet121, confidence rule": {
+   "advised": 0.0102,
+   "correct_when_advised": 0.0093,
+   "wrong_advice": 0.0114,
+   "referred": 0.0102
+  },
+  "unseen|Triple, agreement gate (proposed)": {
+   "advised": 0.0148,
+   "correct_when_advised": 0.0341,
+   "wrong_advice": 0.0087,
+   "referred": 0.0148
+  },
+  "unseen|Triple, confidence rule": {
+   "advised": 0.0131,
+   "correct_when_advised": 0.0319,
+   "wrong_advice": 0.0087,
+   "referred": 0.0131
+  },
+  "unseen|_disagreement": {
+   "err_when_disagree": 0.0193,
+   "err_when_agree": 0.0283,
+   "disagree_rate": 0.0143
+  }
+ },
+ "threshold": 0.8,
+ "seeds": [
+  42,
+  7,
+  123
+ ]
+}

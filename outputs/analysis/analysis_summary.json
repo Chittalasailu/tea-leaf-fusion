@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    42,
+    7,
+    123
+  ],
+  "external": {
+    "images": 10954,
+    "shared_classes": [
+      "1. Tea algal leaf spot",
+      "2. Brown Blight",
+      "3. Gray Blight",
+      "4. Helopeltis",
+      "5. Red spider",
+      "7. Healthy leaf"
+    ],
+    "skipped_folders": {
+      "Red Rust": 2131
+    },
+    "per_class_counts": {
+      "1. Tea algal leaf spot": 1799,
+      "2. Brown Blight": 1957,
+      "3. Gray Blight": 1949,
+      "4. Helopeltis": 1879,
+      "5. Red spider": 1588,
+      "7. Healthy leaf": 1782
+    }
+  }
+}

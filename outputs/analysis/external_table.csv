@@ -1,0 +1,10 @@
+,external_accuracy,external_accuracy,external_macro_f1,external_macro_f1,teaLeafBD_accuracy,teaLeafBD_accuracy
+,mean,std,mean,std,mean,std
+config,,,,,,
+CNN,40.96,2.84,36.4,2.53,87.06,1.06
+DenseNet121,53.17,0.64,50.2,0.8,93.43,0.29
+VGG16,43.55,0.87,41.08,1.31,88.16,0.53
+CNN + DenseNet121,53.82,0.63,50.24,1.02,94.13,0.28
+CNN + VGG16,46.48,0.73,43.36,1.33,92.2,0.44
+DenseNet121 + VGG16,52.09,0.26,49.57,0.55,93.43,0.54
+CNN + DenseNet121 + VGG16,52.75,0.51,49.84,0.54,94.51,0.78

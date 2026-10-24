@@ -1,0 +1,29 @@
+{
+ "classes": [
+  "Tea algal leaf spot",
+  "Brown Blight",
+  "Gray Blight",
+  "Helopeltis",
+  "Red spider",
+  "Healthy leaf"
+ ],
+ "train_images": 7667,
+ "source_test_images": 2192,
+ "target_images": 3996,
+ "epochs_run": 22,
+ "minutes": 29.601098732153574,
+ "in_domain_acc": 0.9776459854014599,
+ "in_domain_f1": 0.9771073945035799,
+ "cross_acc": 0.6819319319319319,
+ "cross_f1": 0.6697724423673562,
+ "cross_recall_per_class": {
+  "Tea algal leaf spot": 0.6555,
+  "Brown Blight": 0.4016,
+  "Gray Blight": 0.537,
+  "Helopeltis": 0.8748,
+  "Red spider": 0.8544,
+  "Healthy leaf": 0.7829
+ },
+ "forward_in_domain_acc_6": 0.9336670838548186,
+ "forward_cross_acc_6": 0.5672813584078875
+}

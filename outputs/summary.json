@@ -1,0 +1,127 @@
+{
+  "device": "mps",
+  "torch": "2.14.1",
+  "seeds": [
+    42,
+    7,
+    123
+  ],
+  "smoke_test": false,
+  "classes": [
+    "1. Tea algal leaf spot",
+    "2. Brown Blight",
+    "3. Gray Blight",
+    "4. Helopeltis",
+    "5. Red spider",
+    "6. Green mirid bug",
+    "7. Healthy leaf"
+  ],
+  "images_per_class": {
+    "1. Tea algal leaf spot": 418,
+    "2. Brown Blight": 508,
+    "3. Gray Blight": 1013,
+    "4. Helopeltis": 607,
+    "5. Red spider": 515,
+    "6. Green mirid bug": 1282,
+    "7. Healthy leaf": 935
+  },
+  "total_images": 5278,
+  "split_sizes": {
+    "train": 3694,
+    "val": 528,
+    "test": 1056
+  },
+  "split_ratio": [
+    0.7,
+    0.1,
+    0.2
+  ],
+  "training": {
+    "image_size": 224,
+    "batch_size": 32,
+    "optimizer": "AdamW (weight decay 1e-4)",
+    "learning_rates": "CNN 1e-3; pretrained backbones 1e-4, new heads 1e-3",
+    "scheduler": "ReduceLROnPlateau(factor 0.3, patience 2)",
+    "max_epochs": {
+      "cnn": 40,
+      "densenet121": 25,
+      "vgg16": 25
+    },
+    "early_stopping_patience": 6,
+    "normalization": "ImageNet mean/std",
+    "augmentation": "random resized crop (0.75-1.0), h/v flip, rotation \u00b120\u00b0, brightness \u00b120%"
+  },
+  "models": {
+    "CNN seed 42": {
+      "train_minutes": 12.295162618160248,
+      "ms_per_image": 1.2954500588503752,
+      "parameters": 1241767,
+      "epochs_run": 40
+    },
+    "DenseNet121 seed 42": {
+      "train_minutes": 11.84134627978007,
+      "ms_per_image": 2.019536766138944,
+      "parameters": 7218055,
+      "epochs_run": 25
+    },
+    "VGG16 seed 42": {
+      "train_minutes": 11.265180746714273,
+      "ms_per_image": 3.3269903876564717,
+      "parameters": 14718279,
+      "epochs_run": 22
+    },
+    "CNN seed 7": {
+      "train_minutes": 12.317763618628184,
+      "ms_per_image": 1.3009851629083808,
+      "parameters": 1241767,
+      "epochs_run": 40
+    },
+    "DenseNet121 seed 7": {
+      "train_minutes": 11.307174849510194,
+      "ms_per_image": 2.0581420623894893,
+      "parameters": 7218055,
+      "epochs_run": 24
+    },
+    "VGG16 seed 7": {
+      "train_minutes": 8.311060682932537,
+      "ms_per_image": 3.427548390446287,
+      "parameters": 14718279,
+      "epochs_run": 23
+    },
+    "CNN seed 123": {
+      "train_minutes": 14.438002228736877,
+      "ms_per_image": 1.3749403032389556,
+      "parameters": 1241767,
+      "epochs_run": 40
+    },
+    "DenseNet121 seed 123": {
+      "train_minutes": 12.20811591943105,
+      "ms_per_image": 2.0431031783421836,
+      "parameters": 7218055,
+      "epochs_run": 25
+    },
+    "VGG16 seed 123": {
+      "train_minutes": 6.9227838317553205,
+      "ms_per_image": 3.35529265981732,
+      "parameters": 14718279,
+      "epochs_run": 19
+    }
+  },
+  "mcnemar": [
+    {
+      "a": "CNN + DenseNet121 + VGG16",
+      "b": "CNN + DenseNet121",
+      "only_a_correct": 11,
+      "only_b_correct": 13,
+      "p_value": 0.8388197422027588
+    },
+    {
+      "a": "CNN + DenseNet121 + VGG16",
+      "b": "DenseNet121",
+      "only_a_correct": 15,
+      "only_b_correct": 10,
+      "p_value": 0.42435622215270996
+    }
+  ],
+  "total_minutes": 0.26259416739145913
+}
