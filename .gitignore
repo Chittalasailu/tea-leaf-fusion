@@ -1,0 +1,8 @@
+data/
+*.pt
+external_cache.npz
+external_masked.npy
+__pycache__/
+.venv/
+.DS_Store
+*.log
