@@ -1,0 +1,11 @@
+rule,cost_ms
+Accuracy-weighted soft voting (original),0.6
+Equal-weight soft voting,0.5
+Majority voting,44.2
+Weighted geometric mean (product rule),1.5
+Max rule,0.6
+Grid-searched weights (val. accuracy),15.1
+Log-loss-optimal weights (val.),3.5
+Class-wise recall weights,0.9
+Temperature-scaled members + weighted voting,7.5
+Stacking (logistic regression),2119.2

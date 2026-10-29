@@ -1,0 +1,13 @@
+true,predicted,per_seed
+Tea algal leaf spot,Brown Blight,8.0
+Green mirid bug,Helopeltis,8.0
+Brown Blight,Tea algal leaf spot,6.7
+Red spider,Gray Blight,5.0
+Brown Blight,Gray Blight,4.7
+Helopeltis,Green mirid bug,4.3
+Gray Blight,Brown Blight,3.0
+Tea algal leaf spot,Green mirid bug,2.0
+Gray Blight,Red spider,2.0
+Gray Blight,Helopeltis,2.0
+Gray Blight,Green mirid bug,1.3
+Helopeltis,Healthy leaf,1.3

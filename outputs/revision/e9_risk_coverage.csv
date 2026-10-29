@@ -1,0 +1,7 @@
+config,data,aurc_max_prob,aurc_margin,aurc_neg_entropy,aurc_agreement,coverage_at_1pct_risk
+DenseNet121,teaLeafBD,0.0083,0.0083,0.0083,0.0083,75.0
+DenseNet121,TeaLeafDiseaseBD,0.3514,0.3291,0.329,0.3514,0.0
+CNN + DenseNet121,teaLeafBD,0.0088,0.0088,0.0098,0.009,74.2
+CNN + DenseNet121,TeaLeafDiseaseBD,0.3849,0.3903,0.3787,0.3858,0.5
+CNN + DenseNet121 + VGG16,teaLeafBD,0.0072,0.0071,0.0084,0.0075,78.4
+CNN + DenseNet121 + VGG16,TeaLeafDiseaseBD,0.4138,0.4164,0.4114,0.4148,0.2

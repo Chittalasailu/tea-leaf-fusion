@@ -1,0 +1,22 @@
+remedy,config,accuracy,macro_f1,acc_mean
+Baseline,CNN,40.96 ± 2.84,36.40 ± 2.53,40.96220558700018
+Baseline,DenseNet121,53.17 ± 0.64,50.20 ± 0.80,53.17387864402653
+Baseline,VGG16,43.55 ± 0.87,41.08 ± 1.31,43.545736717180944
+Baseline,CNN + DenseNet121,53.82 ± 0.63,50.24 ± 1.02,53.81900066946625
+Baseline,CNN + VGG16,46.48 ± 0.73,43.36 ± 1.33,46.47617308745663
+Baseline,DenseNet121 + VGG16,52.09 ± 0.26,49.57 ± 0.55,52.09056052583531
+Baseline,CNN + DenseNet121 + VGG16,52.75 ± 0.51,49.84 ± 0.54,52.74785466496257
+Background removal (test time),CNN,41.94 ± 1.33,37.10 ± 1.85,41.9420607388473
+Background removal (test time),DenseNet121,46.22 ± 0.63,38.55 ± 1.90,46.223601728440144
+Background removal (test time),VGG16,40.81 ± 0.89,39.98 ± 0.42,40.813097194327796
+Background removal (test time),CNN + DenseNet121,47.55 ± 0.42,40.11 ± 0.26,47.550362120382204
+Background removal (test time),CNN + VGG16,44.81 ± 0.76,41.69 ± 1.75,44.81163654068529
+Background removal (test time),DenseNet121 + VGG16,46.91 ± 0.43,40.38 ± 1.08,46.91132615178626
+Background removal (test time),CNN + DenseNet121 + VGG16,47.82 ± 0.72,41.72 ± 0.86,47.81814862150812
+AdaBN (test time),CNN,14.95 ± 1.10,17.11 ± 1.37,14.94735560830138
+AdaBN (test time),DenseNet121,52.14 ± 2.20,53.52 ± 2.46,52.1362059521636
+AdaBN (test time),VGG16,43.55 ± 0.87,41.08 ± 1.31,43.545736717180944
+AdaBN (test time),CNN + DenseNet121,48.25 ± 1.39,48.86 ± 1.35,48.250258657415856
+AdaBN (test time),CNN + VGG16,33.53 ± 0.74,31.64 ± 0.17,33.52504412391212
+AdaBN (test time),DenseNet121 + VGG16,50.16 ± 1.11,50.46 ± 1.10,50.16432353478181
+AdaBN (test time),CNN + DenseNet121 + VGG16,47.10 ± 1.07,46.62 ± 0.79,47.09999391394316

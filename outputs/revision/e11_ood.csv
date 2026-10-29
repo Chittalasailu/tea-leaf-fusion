@@ -1,0 +1,8 @@
+score,auroc,fpr_at_95tpr
+"1 - max prob., DenseNet121",0.631 ± 0.017,100.0 ± 0.0
+"1 - max prob., triple",0.724 ± 0.022,78.6 ± 9.0
+"Entropy, DenseNet121",0.633 ± 0.017,94.9 ± 1.8
+"Entropy, triple",0.738 ± 0.022,78.4 ± 9.2
+"1 - margin, triple",0.712 ± 0.022,78.9 ± 9.1
+Member disagreement (count),0.666 ± 0.010,100.0 ± 0.0
+Mean pairwise Jensen-Shannon divergence,0.750 ± 0.024,78.3 ± 9.5

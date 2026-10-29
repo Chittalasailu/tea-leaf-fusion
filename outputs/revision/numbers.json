@@ -1,0 +1,109 @@
+{
+ "triple_acc": 94.50757575757576,
+ "logloss_weight_densenet": 0.8326120809778272,
+ "grid_inner_range": [
+  91.72979797979798,
+  94.60227272727272
+ ],
+ "ext_recall": {
+  "Tea algal leaf spot": 24.309801741708355,
+  "Brown Blight": 2.4697666496337933,
+  "Gray Blight": 71.88301693175988,
+  "Helopeltis": 66.59570693631363,
+  "Red spider": 54.24013434089,
+  "Healthy leaf": 99.81294425738871
+ },
+ "all_correct": 77.55681818181817,
+ "all_wrong": 2.1780303030303028,
+ "acc_two_right": 97.25213922666151,
+ "acc_one_right": 36.649758454106276,
+ "rules": {
+  "Accuracy-weighted soft voting (original)": {
+   "acc_mean": 94.51,
+   "ext_mean": 52.75
+  },
+  "Equal-weight soft voting": {
+   "acc_mean": 94.48,
+   "ext_mean": 52.64
+  },
+  "Majority voting": {
+   "acc_mean": 94.03,
+   "ext_mean": 52.51
+  },
+  "Weighted geometric mean (product rule)": {
+   "acc_mean": 94.44,
+   "ext_mean": 52.17
+  },
+  "Max rule": {
+   "acc_mean": 93.84,
+   "ext_mean": 52.18
+  },
+  "Grid-searched weights (val. accuracy)": {
+   "acc_mean": 93.88,
+   "ext_mean": 53.18
+  },
+  "Log-loss-optimal weights (val.)": {
+   "acc_mean": 93.53,
+   "ext_mean": 53.23
+  },
+  "Class-wise recall weights": {
+   "acc_mean": 94.44,
+   "ext_mean": 52.84
+  },
+  "Temperature-scaled members + weighted voting": {
+   "acc_mean": 94.63,
+   "ext_mean": 52.56
+  },
+  "Stacking (logistic regression)": {
+   "acc_mean": 94.32,
+   "ext_mean": 54.24
+  }
+ },
+ "alpha": [
+  {
+   "alpha": 0,
+   "acc_test": 94.4760101010101,
+   "acc_ext": 52.635262613352815
+  },
+  {
+   "alpha": 0.5,
+   "acc_test": 94.50757575757576,
+   "acc_ext": 52.680908039681086
+  },
+  {
+   "alpha": 1,
+   "acc_test": 94.50757575757575,
+   "acc_ext": 52.74785466496258
+  },
+  {
+   "alpha": 2,
+   "acc_test": 94.47601010101009,
+   "acc_ext": 52.83001643235349
+  },
+  {
+   "alpha": 5,
+   "acc_test": 94.44444444444446,
+   "acc_ext": 53.04911447872923
+  },
+  {
+   "alpha": 10,
+   "acc_test": 94.22348484848484,
+   "acc_ext": 53.28038463879253
+  },
+  {
+   "alpha": 20,
+   "acc_test": 93.9709595959596,
+   "acc_ext": 53.34124520723024
+  },
+  {
+   "alpha": 50,
+   "acc_test": 93.40277777777779,
+   "acc_ext": 53.176921672448415
+  },
+  {
+   "alpha": 100,
+   "acc_test": 93.43434343434342,
+   "acc_ext": 53.17083561560465
+  }
+ ]
+}
