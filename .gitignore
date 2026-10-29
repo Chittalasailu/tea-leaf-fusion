@@ -1,4 +1,4 @@
-data/
+data
 *.pt
 external_cache.npz
 external_masked.npy

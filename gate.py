@@ -14,7 +14,7 @@ THRESH = 0.80
 split = pd.read_csv(OUT / "split.csv")
 y_val = split.loc[split.split == "val", "label"].to_numpy()
 y_test = split.loc[split.split == "test", "label"].to_numpy()
-y_ext = np.load(A / "external_cache.npz")["y"]
+y_ext = np.load(A / "external_labels.npy")
 SEEDS = json.loads((OUT / "summary.json").read_text())["seeds"]
 
 

@@ -28,9 +28,9 @@ y_val = split.loc[split.split == "val", "label"].to_numpy()
 y_test = split.loc[split.split == "test", "label"].to_numpy()
 SEEDS = json.loads((OUT / "summary.json").read_text())["seeds"]
 probs = {(s, m): np.load(OUT / f"probs_{m}_seed{s}.npz") for s in SEEDS for m in MODELS}
-has_ext = (A / "external_cache.npz").exists()
+has_ext = (A / "external_labels.npy").exists()
 if has_ext:
-    y_ext = np.load(A / "external_cache.npz")["y"]
+    y_ext = np.load(A / "external_labels.npy")
     ext = {(s, m): np.load(A / f"ext_probs_{m}_seed{s}.npy") for s in SEEDS for m in MODELS}
     shared = sorted(set(y_ext.tolist()))
 
