@@ -51,6 +51,19 @@ python sample_figure.py samples.png       # example images from both datasets
 
 `TEA_SMOKE=1 python tea_fusion.py` does a quick 1-epoch run to check that everything works.
 
+The extra analyses of the revised paper:
+
+```bash
+python revision.py          # E1-E13: rules, calibration, risk-coverage, cross-dataset, remedies, ablation (saved outputs only)
+python robustness_eval.py   # E16-E18: regenerate saved predictions, rerun the reverse model, six corruptions (needs images + weights)
+python benchmark.py         # E15: parameters, GFLOPs, CPU latency
+python -m pytest tests      # E14: 158 tests
+streamlit run app.py        # prototype: upload a leaf photo, get advise / refer
+python inference.py leaf.jpg
+```
+
+Results go to `outputs/revision/`. The TeaLeafDiseaseBD labels, in the order the scripts read the images, are in `outputs/analysis/external_labels.npy`.
+
 The saved predictions (`probs_*.npz`, `ext_probs_*.npy`) are in the repo. `tea_fusion.py` skips training for any model whose predictions already exist, so the tables can be rebuilt without a GPU. Delete them to train from scratch.
 
 Training took about 12 minutes per model per seed on an Apple M4 Max (MPS). It also runs on CUDA or CPU.
@@ -72,6 +85,14 @@ The weights for all 9 models (3 models x 3 seeds) and the reverse-direction Dens
 | `leafmask.py` | leaf segmentation used for background removal |
 | `reverse.py` | reverse-direction experiment |
 | `sample_figure.py` | sample image grid |
+| `fusionlib.py` | fusion rules, calibration, diversity, significance tests, selective prediction (numpy only) |
+| `revision.py` | experiments E1-E13 from the saved predictions |
+| `corruptions.py` | six image corruptions at two levels |
+| `robustness_eval.py` | reruns with the released weights (E16-E18) |
+| `benchmark.py` | model size, GFLOPs, CPU latency (E15) |
+| `inference.py` | single-image prediction with the confidence-gated advice rule |
+| `app.py` | Streamlit prototype |
+| `tests/` | pytest suite (unit, data, regression, model, corruption, integration, acceptance) |
 
 ## License
 
